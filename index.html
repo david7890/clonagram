@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--width=device-width ocupar ancho del dispositivo, initial-scale=1.0 inciar zoom 100%, user-scalable no hacer zoom -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Oleo+Script" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="public/app.css">
+    <title>Clonagram</title>
+</head>
+<body>
+    <section id = "main-container">
+        <div class="container">
+            <div class="row">
+                <div class="col s10 push-s1">
+                    <div class="row">
+                        <div class="col m5 hide-on-small-only">
+                            <img class="iphone" src="public/phone-icon.png" alt="imagen phone-icon">
+                        </div>
+                        <div class="col s12 m7">
+                            <div class="row">
+                                <div class="signup-box">
+                                    <h1 class="title">Clonagram</h1>
+                                    <form class="signup-form">
+                                        <h2>Registrate para ver fotos de tus amigos</h2>
+                                        <div class="section">
+                                            <a class="btn btn-fb hiden-on-small-only">Iniciar sesión con Facebook</a>
+                                            <a class="btn btn-fb hide-on-med-and-up">Iniciar sesión</a>
+                                        </div>
+                                        <div class="divider"></div>
+                                        <div class="section">
+                                            <input type="email" name="email" placeholder="Correo electronico"></input>
+                                            <input type="text" name="name" placeholder="Nombre completo"></input>
+                                            <input type="text" name="username" placeholder="Nombre de Usuario"></input>
+                                            <input type="password" name="password" placeholder="Contraseña"></input>
+                                            <button class="btn waves-effect waves-light btn-signup" type="submit">REGÍSTRATE</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="login-box">
+                                    ¿Tienes una cuenta? <a href="/signin"> Entrar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col s12 l3 center-align">
+                     <!-- Dropdown Trigger -->
+                    <a class='dropdown-trigger btn' href='#' data-target='dropdown1'>Cambiar Idioma</a>
+
+                    <!-- Dropdown Structure -->
+                    <ul id='dropdown1' class='dropdown-content'>
+                        <li><a href="#!">Inglés</a></li>
+                        <li><a href="#!">Español</a></li>
+                        <li class="divider" tabindex="-1"></li>
+                        <li><a href="#!">three</a></li>
+                        <li><a href="#!"><i class="material-icons">view_module</i>four</a></li>
+                        <li><a href="#!"><i class="material-icons">cloud</i>five</a></li>
+                    </ul>
+                </div>
+                <div class="col s12 l3 push-l6 center-align">
+                    © 2020 Clonagram
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"
+    integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+    crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js">
+    </script>
+ 
+</body>
+</html>

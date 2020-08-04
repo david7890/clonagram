@@ -1,0 +1,48 @@
+{
+  "name": "clonagram",
+  "version": "0.1.0",
+  "description": "Comparte tus fotos con tus amigos",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "gulp",
+    "start": "concurrently --kill-others \"gulp watch\" \"node server.js\""
+  },
+  "keywords": [
+    "javascript"
+  ],
+  "author": "David <davidco7890@gmail.com> (https://twitter.com/divad_789)",
+  "license": "MIT",
+  "dependencies": {
+    "@formatjs/intl-relativetimeformat": "^6.2.3",
+    "axios": "^0.19.2",
+    "empty-element": "^1.0.0",
+    "express": "^4.17.1",
+    "file-extension": "^4.0.5",
+    "gulp": "^4.0.2",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^4.1.0",
+    "intl": "^1.2.5",
+    "intl-messageformat": "^9.1.5",
+    "intl-relativeformat": "^6.4.3",
+    "materialize-css": "^1.0.0-rc.2",
+    "mighty-webcamjs": "^3.1.1",
+    "moment": "^2.27.0",
+    "multer": "^1.4.2",
+    "page": "^1.11.6",
+    "pug": "^3.0.0",
+    "superagent": "^5.3.1",
+    "title": "^3.4.2",
+    "webcamjs": "^1.0.26",
+    "yo-yo": "^1.4.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.10.4",
+    "@babel/preset-env": "^7.10.4",
+    "babelify": "^10.0.0",
+    "browserify": "^16.5.1",
+    "concurrently": "^5.2.0",
+    "vinyl-source-stream": "^2.0.0",
+    "watchify": "^3.11.1"
+  }
+}

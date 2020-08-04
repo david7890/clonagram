@@ -1,0 +1,160 @@
+//importar sass materialize
+$secondary-color: #125688;
+$clonagram-red: #f44336;
+
+@import "node_modules/materialize-css/sass/materialize.scss";
+@import "./loader";
+
+body{
+    background-color: #fafafa;
+    font-family: 'Montserrat';
+}
+
+.landing{
+    margin: 30px auto;
+}
+.iphone{
+    max-width: 135%;
+}
+
+.site-footer{
+    text-transform: uppercase;
+    font-size: 12px;
+}
+.login-box,
+.signup-box{
+    border-radius: 3px;
+    padding: 10px 0;
+    text-align: center;
+}
+.title{
+    font-family: 'Oleo Script';
+    font-size: 42px;
+    color: $secondary-color !important;
+}
+.signup-box .title{
+    font-family: 'Oleo Script';
+    font-size: 75px;
+}
+.signup-form{
+    width: 70%;
+    margin: 0 auto;
+}
+
+.signup-form h2{
+    font-size: 1.4em;
+    font-family: 'Montserrat';
+}
+.signup-form .btn.btn-fb{
+    background-color: #4090db;
+    font-size: .9em;
+}
+
+.signup-form .btn.btn-fb:hover{
+    background-color: #2d6599;
+}
+.header{
+    background-color: white;
+    color: $secondary-color;
+    border-bottom: 1px solid #edeeee;
+
+}
+.timeline{
+    padding: 30px 0;
+}
+
+$avatar-size: 40px;
+
+.avatar{
+    width: $avatar-size;
+    height: $avatar-size;
+    border-radius: 50%;
+    float: left;
+    margin-right: 12px;
+}
+
+.card small.time{
+    line-height: $avatar-size;
+}
+
+.card p{
+    padding: 20px 0;
+}
+
+.card .likes{
+    line-height: 30px;
+    margin-left: 12px;
+}
+.card i{
+    font-size: 30px;
+}
+.card .far.fa-heart{
+    color: $secondary-color;
+}
+
+.fas.fa-heart{
+    color: #f44336;
+    display: none;
+}
+
+.card.liked{
+    .fas.fa-heart{
+        display: blocK;
+    }
+    .far.fa-heart{
+        display: none;
+    }
+}
+
+.form-upload{
+    span, button{
+        color: white;
+    }
+    .fileUpload{
+        position: relative;
+        overflow: hidden;
+        margin: 10px;
+
+        input{
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            margin: 0;
+            padding: 0;
+            font-size: 20;
+            cursor: pointer;
+            opacity: 0;
+            filter: alpha(opacity=0);
+        }
+    }
+}
+
+.modal{
+    img{
+        max-width: 90%;
+        max-height: 90%;
+    }
+    .fa-heart{
+        display: inline-block;
+    }
+}
+
+.like-heart{
+    font-size: 10em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+    transition: all .1s ease;
+    opacity: 0;
+    
+    &.liked{
+        color: $clonagram-red;
+        font-size: 12em;
+        display: block;
+        transition: all .5s ease;
+        opacity: 1;
+    }
+}
